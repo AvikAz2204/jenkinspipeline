@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bqxdgM4bKYuU4vg8M7xTQCpDk0NYgCJbjau+NgZNz9YBSm+9pqNWxhh/WY5SLRj90lr0tTYO4vjNqIkTAPdf0A==",
+  "dgSpecHash": "uef1Gb5yCF7LHWtTlqir2FQ1qtmcaaBVxvSbPssYZDfaANr1eI0dws3OCqcBpvjzSvdwOiSBsx4kP7dutfIJ1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\avikg\\Desktop\\JenkinsBuildPipeline\\JenkinsBuildPipeline.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\avikg\\Desktop\\jenkins\\jenkinspipeline\\JenkinsBuildPipeline.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\avikg\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
+  ],
   "logs": []
 }
