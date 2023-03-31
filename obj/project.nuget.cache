@@ -1,23 +1,29 @@
 {
   "version": 2,
-  "dgSpecHash": "IiNFA6GOD0M5RdVwu9rcUjmCmy/NOEIgOxWyIwQJRCtmoC+ALgXQVbIAlv4J5JL7ASb3gyCwFZ7/4YlnZBDJcg==",
+  "dgSpecHash": "p5laJdG/OfZld8HoF2E26TLO6Z5lSk6ztX9mYW/CNOIBSN+55bsGtMWWFbMkBQO8hc0cZLplsoaG6HP8ovTv6A==",
   "success": true,
   "projectFilePath": "C:\\Users\\avikg\\Desktop\\jenkins\\jenkinspipeline\\JenkinsBuildPipeline.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.0\\microsoft.extensions.configuration.3.1.0.nupkg.sha512",
-    "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.0\\microsoft.extensions.configuration.abstractions.3.1.0.nupkg.sha512",
+    "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.0\\microsoft.extensions.configuration.binder.3.1.0.nupkg.sha512",
     "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.0\\microsoft.extensions.dependencyinjection.3.1.0.nupkg.sha512",
-    "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.0\\microsoft.extensions.dependencyinjection.abstractions.3.1.0.nupkg.sha512",
+    "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks\\6.0.9\\microsoft.extensions.diagnostics.healthchecks.6.0.9.nupkg.sha512",
+    "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks.abstractions\\6.0.9\\microsoft.extensions.diagnostics.healthchecks.abstractions.6.0.9.nupkg.sha512",
+    "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\6.0.0\\microsoft.extensions.hosting.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.http\\3.1.0\\microsoft.extensions.http.3.1.0.nupkg.sha512",
     "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.logging\\3.1.0\\microsoft.extensions.logging.3.1.0.nupkg.sha512",
-    "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.0\\microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512",
+    "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.2\\microsoft.extensions.logging.abstractions.6.0.2.nupkg.sha512",
     "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.objectpool\\7.0.0\\microsoft.extensions.objectpool.7.0.0.nupkg.sha512",
-    "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.options\\3.1.0\\microsoft.extensions.options.3.1.0.nupkg.sha512",
-    "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.0\\microsoft.extensions.primitives.3.1.0.nupkg.sha512",
+    "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\avikg\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\avikg\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\avikg\\.nuget\\packages\\prometheus-net\\8.0.0\\prometheus-net.8.0.0.nupkg.sha512",
-    "C:\\Users\\avikg\\.nuget\\packages\\prometheus-net.aspnetcore\\8.0.0\\prometheus-net.aspnetcore.8.0.0.nupkg.sha512"
+    "C:\\Users\\avikg\\.nuget\\packages\\prometheus-net.aspnetcore\\8.0.0\\prometheus-net.aspnetcore.8.0.0.nupkg.sha512",
+    "C:\\Users\\avikg\\.nuget\\packages\\prometheus-net.aspnetcore.healthchecks\\8.0.0\\prometheus-net.aspnetcore.healthchecks.8.0.0.nupkg.sha512",
+    "C:\\Users\\avikg\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

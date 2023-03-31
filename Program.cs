@@ -1,9 +1,13 @@
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Prometheus;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+
 
 var app = builder.Build();
 
@@ -19,6 +23,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseHttpMetrics();
 app.UseMetricServer();
+
 app.UseRouting();
 
 app.UseAuthorization();

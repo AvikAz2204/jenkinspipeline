@@ -47,7 +47,15 @@
               "target": "Package",
               "version": "[1.17.0, )"
             },
+            "prometheus-net": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "prometheus-net.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "prometheus-net.AspNetCore.HealthChecks": {
               "target": "Package",
               "version": "[8.0.0, )"
             }
