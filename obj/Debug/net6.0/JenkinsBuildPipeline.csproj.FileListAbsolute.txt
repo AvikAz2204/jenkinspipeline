@@ -76,3 +76,8 @@ C:\Users\avikg\Desktop\jenkins\jenkinspipeline\obj\Debug\net6.0\refint\JenkinsBu
 C:\Users\avikg\Desktop\jenkins\jenkinspipeline\obj\Debug\net6.0\JenkinsBuildPipeline.pdb
 C:\Users\avikg\Desktop\jenkins\jenkinspipeline\obj\Debug\net6.0\JenkinsBuildPipeline.genruntimeconfig.cache
 C:\Users\avikg\Desktop\jenkins\jenkinspipeline\obj\Debug\net6.0\ref\JenkinsBuildPipeline.dll
+C:\Users\avikg\Desktop\jenkins\jenkinspipeline\obj\Debug\net6.0\JenkinsBuildPipeline.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\avikg\Desktop\jenkins\jenkinspipeline\bin\Debug\net6.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\avikg\Desktop\jenkins\jenkinspipeline\bin\Debug\net6.0\Prometheus.NetStandard.dll
+C:\Users\avikg\Desktop\jenkins\jenkinspipeline\bin\Debug\net6.0\Prometheus.AspNetCore.dll
+C:\Users\avikg\Desktop\jenkins\jenkinspipeline\obj\Debug\net6.0\JenkinsBuildPipeline.csproj.CopyComplete
