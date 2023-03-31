@@ -18,7 +18,7 @@ services:
       - "9090:9090"
     configs:
       - source: prometheus_config
-        target: /var/lib/jenkins/workspace/pipeline2/etc/prometheus/prometheus.yml
+        target: /var/lib/jenkins/workspace/pipeline2/prometheus.yml
     depends_on:
       - web
   grafana:
