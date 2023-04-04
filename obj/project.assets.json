@@ -2,6 +2,430 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "App.Metrics/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.Core": "4.3.0",
+          "App.Metrics.Formatters.Json": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "App.Metrics.Abstractions/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "App.Metrics.AspNetCore/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics": "4.3.0",
+          "App.Metrics.AspNetCore.Endpoints": "4.3.0",
+          "App.Metrics.AspNetCore.Tracking": "4.3.0",
+          "App.Metrics.Extensions.Hosting": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "App.Metrics.AspNetCore.Abstractions/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.Abstractions": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "App.Metrics.AspNetCore.All/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.AspNetCore": "4.3.0",
+          "App.Metrics.AspNetCore.Endpoints": "4.3.0",
+          "App.Metrics.AspNetCore.Hosting": "4.3.0",
+          "App.Metrics.AspNetCore.Mvc": "4.3.0",
+          "App.Metrics.AspNetCore.Routing": "4.3.0",
+          "App.Metrics.AspNetCore.Tracking": "4.3.0",
+          "App.Metrics.Extensions.Collectors": "4.3.0",
+          "App.Metrics.Extensions.Configuration": "4.3.0",
+          "App.Metrics.Extensions.DependencyInjection": "4.3.0",
+          "App.Metrics.Extensions.HealthChecks": "4.3.0",
+          "App.Metrics.Extensions.Hosting": "4.3.0",
+          "App.Metrics.Formatters.Json": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.All.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.All.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "App.Metrics.AspNetCore.Core/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.AspNetCore.Abstractions": "4.3.0",
+          "App.Metrics.Core": "4.3.0",
+          "App.Metrics.Extensions.Configuration": "4.3.0",
+          "App.Metrics.Extensions.DependencyInjection": "4.3.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "3.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "App.Metrics.AspNetCore.Endpoints/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.AspNetCore.Hosting": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Endpoints.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Endpoints.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "App.Metrics.AspNetCore.Hosting/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.AspNetCore.Core": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Hosting.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Hosting.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "App.Metrics.AspNetCore.Mvc/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.AspNetCore": "4.3.0",
+          "App.Metrics.AspNetCore.Mvc.Core": "4.3.0",
+          "App.Metrics.AspNetCore.Routing": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Mvc.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Mvc.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "App.Metrics.AspNetCore.Mvc.Core/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.AspNetCore": "4.3.0",
+          "App.Metrics.AspNetCore.Routing": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Mvc.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Mvc.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "App.Metrics.AspNetCore.Routing/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.AspNetCore.Abstractions": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Routing.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Routing.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "App.Metrics.AspNetCore.Tracking/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.AspNetCore.Hosting": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Tracking.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/App.Metrics.AspNetCore.Tracking.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "App.Metrics.Concurrency/4.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.Concurrency.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.Concurrency.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "App.Metrics.Core/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.Abstractions": "4.3.0",
+          "App.Metrics.Concurrency": "4.3.0",
+          "App.Metrics.Formatters.Ascii": "4.3.0",
+          "Microsoft.CSharp": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "App.Metrics.Extensions.Collectors/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics": "4.3.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "3.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.Extensions.Collectors.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.Extensions.Collectors.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "App.Metrics.Extensions.Configuration/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics": "4.3.0",
+          "Microsoft.Extensions.Configuration.Binder": "3.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.Extensions.Configuration.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.Extensions.Configuration.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "App.Metrics.Extensions.DependencyInjection/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics": "4.3.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.Extensions.DependencyInjection.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.Extensions.DependencyInjection.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "App.Metrics.Extensions.HealthChecks/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.Core": "4.3.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "3.1.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.Extensions.HealthChecks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.Extensions.HealthChecks.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "App.Metrics.Extensions.Hosting/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.Core": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/App.Metrics.Extensions.Hosting.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/App.Metrics.Extensions.Hosting.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "App.Metrics.Formatters.Ascii/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.Abstractions": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/App.Metrics.Formatters.Ascii.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/App.Metrics.Formatters.Ascii.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "App.Metrics.Formatters.Json/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.Abstractions": "4.3.0",
+          "System.Text.Json": "4.7.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.Formatters.Json.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.Formatters.Json.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "App.Metrics.Formatters.Prometheus/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.Core": "4.3.0",
+          "protobuf-net": "2.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/App.Metrics.Formatters.Prometheus.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/App.Metrics.Formatters.Prometheus.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -234,6 +658,25 @@
           }
         }
       },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Configuration.Binder": "3.1.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Options": "3.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Primitives/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -251,6 +694,15 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
         }
       },
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.0": {
@@ -313,6 +765,54 @@
           }
         }
       },
+      "protobuf-net/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.ServiceModel.Primitives": "4.5.3"
+        },
+        "compile": {
+          "lib/netcoreapp2.1/protobuf-net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/protobuf-net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Private.ServiceModel/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.0",
+          "System.Reflection.DispatchProxy": "4.5.0",
+          "System.Security.Principal.Windows": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard2.0/System.Private.ServiceModel.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard2.0/System.Private.ServiceModel.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Reflection.DispatchProxy/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Reflection.DispatchProxy.dll": {}
+        }
+      },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
@@ -328,10 +828,538 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "System.Security.Principal.Windows/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.ServiceModel.Primitives/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.ServiceModel": "4.5.3"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.ServiceModel.Primitives.dll": {},
+          "ref/netstandard2.0/System.ServiceModel.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ServiceModel.Primitives.dll": {},
+          "lib/netstandard2.0/System.ServiceModel.dll": {}
+        }
+      },
+      "System.Text.Json/4.7.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        }
       }
     }
   },
   "libraries": {
+    "App.Metrics/4.3.0": {
+      "sha512": "D2eDXyfrl+lXigXsQTv/81JCxUPTjgwsazK5neA3NOg87tNmBpFqeVJppI/qLKyC8yklTU2ekZDFX5hKechu6A==",
+      "type": "package",
+      "path": "app.metrics/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.4.3.0.nupkg.sha512",
+        "app.metrics.nuspec",
+        "lib/net461/App.Metrics.dll",
+        "lib/net461/App.Metrics.pdb",
+        "lib/net461/App.Metrics.xml",
+        "lib/netstandard2.0/App.Metrics.dll",
+        "lib/netstandard2.0/App.Metrics.pdb",
+        "lib/netstandard2.0/App.Metrics.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.Abstractions/4.3.0": {
+      "sha512": "ekSlyVgN6foN6rmwVmRGBr0j5ufgRPsO5f7Md2fc3q44vkBNYpjsRLiUQsIXCSVI3NHorkrZh8aL4eRcLkVDGw==",
+      "type": "package",
+      "path": "app.metrics.abstractions/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.abstractions.4.3.0.nupkg.sha512",
+        "app.metrics.abstractions.nuspec",
+        "lib/net461/App.Metrics.Abstractions.dll",
+        "lib/net461/App.Metrics.Abstractions.pdb",
+        "lib/net461/App.Metrics.Abstractions.xml",
+        "lib/netstandard2.0/App.Metrics.Abstractions.dll",
+        "lib/netstandard2.0/App.Metrics.Abstractions.pdb",
+        "lib/netstandard2.0/App.Metrics.Abstractions.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.AspNetCore/4.3.0": {
+      "sha512": "b9xsSzFRRMTfhZSwPxwA6AgnItIfINXVXJHtnawjWZmELByAVljqk/pt/rqBgmGdi4lm08mYD5Oa+wv//79iiA==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.aspnetcore.4.3.0.nupkg.sha512",
+        "app.metrics.aspnetcore.nuspec",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.dll",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.pdb",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.xml",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.pdb",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.AspNetCore.Abstractions/4.3.0": {
+      "sha512": "VQRn2A70HXn0KzB0OTzx4C7LjTLa2zARg4G2OkHpdlbqBQaJo7Lt1amKjzUQAdg7zEEOofr9wtzVISpV63UB9A==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.abstractions/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.aspnetcore.abstractions.4.3.0.nupkg.sha512",
+        "app.metrics.aspnetcore.abstractions.nuspec",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Abstractions.dll",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Abstractions.pdb",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Abstractions.xml",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Abstractions.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Abstractions.pdb",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Abstractions.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.AspNetCore.All/4.3.0": {
+      "sha512": "ZCc2GSoDdmwxvacu9Rc/2TFtMW33KPWXfRbLF9yemEKalO5CQvDtZbCs9E1dDCEofeeI2Eho0ky86Brm3lXm4g==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.all/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.aspnetcore.all.4.3.0.nupkg.sha512",
+        "app.metrics.aspnetcore.all.nuspec",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.All.dll",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.All.pdb",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.All.xml",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.All.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.All.pdb",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.All.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.AspNetCore.Core/4.3.0": {
+      "sha512": "Ddk6q4YeA2P23+07MXo6j4vaJtE+sY81+6jbbLBSboW9CRhO40QKUukYW+OtNfgX+PegQigHWjFLrZGt/X4sWw==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.core/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.aspnetcore.core.4.3.0.nupkg.sha512",
+        "app.metrics.aspnetcore.core.nuspec",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Core.dll",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Core.pdb",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Core.xml",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Core.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Core.pdb",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Core.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.AspNetCore.Endpoints/4.3.0": {
+      "sha512": "Ns/66gHqwwujWpSxrgdJH39YcNYfmd23Jon+vb+SE43VOFTBHRxer6zGJQIuFdFhePCFlT7obi5Dz9hde47jIQ==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.endpoints/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.aspnetcore.endpoints.4.3.0.nupkg.sha512",
+        "app.metrics.aspnetcore.endpoints.nuspec",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Endpoints.dll",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Endpoints.pdb",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Endpoints.xml",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Endpoints.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Endpoints.pdb",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Endpoints.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.AspNetCore.Hosting/4.3.0": {
+      "sha512": "BBb4BT6c20pT/in7jzSR0PrKXc1kwGQNLY921BRs5szJcNoNkdPbct7gzYOUed2JWMY7e2GhKNVZT9Ew1fQ9XA==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.hosting/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.aspnetcore.hosting.4.3.0.nupkg.sha512",
+        "app.metrics.aspnetcore.hosting.nuspec",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Hosting.dll",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Hosting.pdb",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Hosting.xml",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Hosting.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Hosting.pdb",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Hosting.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.AspNetCore.Mvc/4.3.0": {
+      "sha512": "CvsIUrUFS6sWimxKRl9RChDtOAGY36yW3HSTNXSaUrbFpmF76qL2HKiXu+4vSpO0Xau+fk7TdJvGRiG5RWGj0A==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.mvc/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.aspnetcore.mvc.4.3.0.nupkg.sha512",
+        "app.metrics.aspnetcore.mvc.nuspec",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Mvc.dll",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Mvc.pdb",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Mvc.xml",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Mvc.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Mvc.pdb",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Mvc.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.AspNetCore.Mvc.Core/4.3.0": {
+      "sha512": "acAmuq4roemQv19S7xtboDqEA04NAlSsIw9F/mt51fCcjdq338qgdlEFlr3M2OCaorfS8WzMtlBPblY2/VUdWg==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.mvc.core/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.aspnetcore.mvc.core.4.3.0.nupkg.sha512",
+        "app.metrics.aspnetcore.mvc.core.nuspec",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Mvc.Core.dll",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Mvc.Core.pdb",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Mvc.Core.xml",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Mvc.Core.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Mvc.Core.pdb",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Mvc.Core.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.AspNetCore.Routing/4.3.0": {
+      "sha512": "s8TMzlkvKM+zBlLYVcpH/Ofk4ftfWBvSDD6T+ehxMiY3k4entz6SVAeJTLrq2PDmO2T5vy7cYI97R0M6Fr6dpA==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.routing/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.aspnetcore.routing.4.3.0.nupkg.sha512",
+        "app.metrics.aspnetcore.routing.nuspec",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Routing.dll",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Routing.pdb",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Routing.xml",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Routing.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Routing.pdb",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Routing.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.AspNetCore.Tracking/4.3.0": {
+      "sha512": "NWFmXLKEDXdkdKBN32FZXBd16Qhj6UpzQYSjmUN8XOYb+pjJQxttpTTnO8nWYHQ1xX893jx8vjZTN8vQ40j9AA==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.tracking/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.aspnetcore.tracking.4.3.0.nupkg.sha512",
+        "app.metrics.aspnetcore.tracking.nuspec",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Tracking.dll",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Tracking.pdb",
+        "lib/netcoreapp3.1/App.Metrics.AspNetCore.Tracking.xml",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Tracking.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Tracking.pdb",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Tracking.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.Concurrency/4.3.0": {
+      "sha512": "otryWX9AR7wLPD49glbxvbYc16pnDOEezHsAtf5oVjhAa/fD+fjhI11MOgzBOjFpkH7z2FLl/gtZ0lwSdNxSag==",
+      "type": "package",
+      "path": "app.metrics.concurrency/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.concurrency.4.3.0.nupkg.sha512",
+        "app.metrics.concurrency.nuspec",
+        "lib/netstandard1.1/App.Metrics.Concurrency.dll",
+        "lib/netstandard1.1/App.Metrics.Concurrency.pdb",
+        "lib/netstandard1.1/App.Metrics.Concurrency.xml",
+        "lib/netstandard2.0/App.Metrics.Concurrency.dll",
+        "lib/netstandard2.0/App.Metrics.Concurrency.pdb",
+        "lib/netstandard2.0/App.Metrics.Concurrency.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.Core/4.3.0": {
+      "sha512": "HhW4n2fF+WBi6ctCpwsYkKCSeLhG5Y17e31kSkdESNAdPvroI9szlzW3WoY20qsB3bCldrGPPnCN6jXI1t3agA==",
+      "type": "package",
+      "path": "app.metrics.core/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.core.4.3.0.nupkg.sha512",
+        "app.metrics.core.nuspec",
+        "lib/net461/App.Metrics.Core.dll",
+        "lib/net461/App.Metrics.Core.pdb",
+        "lib/net461/App.Metrics.Core.xml",
+        "lib/netstandard2.0/App.Metrics.Core.dll",
+        "lib/netstandard2.0/App.Metrics.Core.pdb",
+        "lib/netstandard2.0/App.Metrics.Core.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.Extensions.Collectors/4.3.0": {
+      "sha512": "vpWzbLJ2uUnaR6s/bp4F1mZNf5vxMvFA0re+bUbQ8gkop7AEJZ1g3uFdQs7mSeL56josQBGnwbMediVst5zywA==",
+      "type": "package",
+      "path": "app.metrics.extensions.collectors/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.extensions.collectors.4.3.0.nupkg.sha512",
+        "app.metrics.extensions.collectors.nuspec",
+        "lib/netstandard2.0/App.Metrics.Extensions.Collectors.dll",
+        "lib/netstandard2.0/App.Metrics.Extensions.Collectors.pdb",
+        "lib/netstandard2.0/App.Metrics.Extensions.Collectors.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.Extensions.Configuration/4.3.0": {
+      "sha512": "+5eNA58nJEvKNd6eKXXnwjjH8KU0wIN9VnE4015qoU6P/yii0tKARrF5Rbw0OGpI6jJmfZ/UIielU07b9QB8aA==",
+      "type": "package",
+      "path": "app.metrics.extensions.configuration/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.extensions.configuration.4.3.0.nupkg.sha512",
+        "app.metrics.extensions.configuration.nuspec",
+        "lib/netstandard2.0/App.Metrics.Extensions.Configuration.dll",
+        "lib/netstandard2.0/App.Metrics.Extensions.Configuration.pdb",
+        "lib/netstandard2.0/App.Metrics.Extensions.Configuration.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.Extensions.DependencyInjection/4.3.0": {
+      "sha512": "lujWx61MSJPKdX7PiaNPv0aXW6D+UzzqiQe/2EwXv401+bshJyyrltSTVVS2cuyla+iq/ag+W1Vc/xeFR0rrwg==",
+      "type": "package",
+      "path": "app.metrics.extensions.dependencyinjection/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.extensions.dependencyinjection.4.3.0.nupkg.sha512",
+        "app.metrics.extensions.dependencyinjection.nuspec",
+        "lib/netstandard2.0/App.Metrics.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/App.Metrics.Extensions.DependencyInjection.pdb",
+        "lib/netstandard2.0/App.Metrics.Extensions.DependencyInjection.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.Extensions.HealthChecks/4.3.0": {
+      "sha512": "uLpWgl9flmsDTYuYvIOjjo3tEsn3H951OS3ItS2tqi/wgGGpwAXwRW+HB/meB8W6PBRmISPQCUwNJudRerH5zA==",
+      "type": "package",
+      "path": "app.metrics.extensions.healthchecks/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.extensions.healthchecks.4.3.0.nupkg.sha512",
+        "app.metrics.extensions.healthchecks.nuspec",
+        "lib/netstandard2.0/App.Metrics.Extensions.HealthChecks.dll",
+        "lib/netstandard2.0/App.Metrics.Extensions.HealthChecks.pdb",
+        "lib/netstandard2.0/App.Metrics.Extensions.HealthChecks.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.Extensions.Hosting/4.3.0": {
+      "sha512": "uSw1pD6MHoky5NCDHsmGArThHhjIXiILRv+XboZXHGA6M4DbWbPrPMsMr9uCeKKyT2wl63y8cboH8oCkC4s8yg==",
+      "type": "package",
+      "path": "app.metrics.extensions.hosting/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.extensions.hosting.4.3.0.nupkg.sha512",
+        "app.metrics.extensions.hosting.nuspec",
+        "lib/netcoreapp3.1/App.Metrics.Extensions.Hosting.dll",
+        "lib/netcoreapp3.1/App.Metrics.Extensions.Hosting.pdb",
+        "lib/netcoreapp3.1/App.Metrics.Extensions.Hosting.xml",
+        "lib/netstandard2.0/App.Metrics.Extensions.Hosting.dll",
+        "lib/netstandard2.0/App.Metrics.Extensions.Hosting.pdb",
+        "lib/netstandard2.0/App.Metrics.Extensions.Hosting.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.Formatters.Ascii/4.3.0": {
+      "sha512": "PPacBFRji8wTGv8rs13fPmAVlOit7CAvkdPkZ6aYgtUa75e0v4fYzwqPcLxokCqdQXW96PpKPfC0VZZeDkgljg==",
+      "type": "package",
+      "path": "app.metrics.formatters.ascii/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.formatters.ascii.4.3.0.nupkg.sha512",
+        "app.metrics.formatters.ascii.nuspec",
+        "lib/net461/App.Metrics.Formatters.Ascii.dll",
+        "lib/net461/App.Metrics.Formatters.Ascii.pdb",
+        "lib/net461/App.Metrics.Formatters.Ascii.xml",
+        "lib/netstandard2.0/App.Metrics.Formatters.Ascii.dll",
+        "lib/netstandard2.0/App.Metrics.Formatters.Ascii.pdb",
+        "lib/netstandard2.0/App.Metrics.Formatters.Ascii.xml",
+        "lib/netstandard2.1/App.Metrics.Formatters.Ascii.dll",
+        "lib/netstandard2.1/App.Metrics.Formatters.Ascii.pdb",
+        "lib/netstandard2.1/App.Metrics.Formatters.Ascii.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.Formatters.Json/4.3.0": {
+      "sha512": "H+4Q407Xa5nuBagooMeh5UAuGHWfKZRsinpwr9dtyV+LZbhAS5yheAAMPY1Xs/g0zzI3zJQJDRy7iX0totAcYA==",
+      "type": "package",
+      "path": "app.metrics.formatters.json/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.formatters.json.4.3.0.nupkg.sha512",
+        "app.metrics.formatters.json.nuspec",
+        "lib/net461/App.Metrics.Formatters.Json.dll",
+        "lib/net461/App.Metrics.Formatters.Json.pdb",
+        "lib/net461/App.Metrics.Formatters.Json.xml",
+        "lib/netstandard2.0/App.Metrics.Formatters.Json.dll",
+        "lib/netstandard2.0/App.Metrics.Formatters.Json.pdb",
+        "lib/netstandard2.0/App.Metrics.Formatters.Json.xml",
+        "logo.png"
+      ]
+    },
+    "App.Metrics.Formatters.Prometheus/4.3.0": {
+      "sha512": "cVJZX5jiMxt+YytjpbMw52reN47LGL3XsCljzNH9Pb+Op9iSTazc4pa+/fX+FdpbhH/Zt+5hjdYiqOLFol0wGg==",
+      "type": "package",
+      "path": "app.metrics.formatters.prometheus/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "app.metrics.formatters.prometheus.4.3.0.nupkg.sha512",
+        "app.metrics.formatters.prometheus.nuspec",
+        "lib/netstandard2.0/App.Metrics.Formatters.Prometheus.dll",
+        "lib/netstandard2.0/App.Metrics.Formatters.Prometheus.pdb",
+        "lib/netstandard2.0/App.Metrics.Formatters.Prometheus.xml",
+        "lib/netstandard2.1/App.Metrics.Formatters.Prometheus.dll",
+        "lib/netstandard2.1/App.Metrics.Formatters.Prometheus.pdb",
+        "lib/netstandard2.1/App.Metrics.Formatters.Prometheus.xml",
+        "logo.png"
+      ]
+    },
+    "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
+      "sha512": "K63Y4hORbBcKLWH5wnKgzyn7TOfYzevIEwIedQHBIkmkEBA9SCqgvom+XTuE+fAFGvINGkhFItaZ2dvMGdT5iw==",
+      "type": "package",
+      "path": "microsoft.bcl.asyncinterfaces/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.CSharp/4.4.0": {
+      "sha512": "vvVR/B08YVghQ4jHEloxqw2ZWzEGE1AOA5E0DioUM3ujbXz6FD3AfB/0Jl2ohJPd0nXYGwmPe1En6HTsSriq1A==",
+      "type": "package",
+      "path": "microsoft.csharp/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.4.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Microsoft.Extensions.Configuration/3.1.0": {
       "sha512": "Lu41BWNmwhKr6LgyQvcYBOge0pPvmiaK8R5UHXX4//wBhonJyWcT2OK1mqYfEM5G7pTf31fPrpIHOT6sN7EGOA==",
       "type": "package",
@@ -634,6 +1662,22 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Extensions.Options.ConfigurationExtensions/3.1.0": {
+      "sha512": "tx6gMKE3rDspA1YZT8SlQJmyt1BaBSl6mNjB3g0ZO6m3NnoavCifXkGeBuDk9Ae4XjW8C+dty52p+0u38jPRIQ==",
+      "type": "package",
+      "path": "microsoft.extensions.options.configurationextensions/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Options.ConfigurationExtensions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.xml",
+        "microsoft.extensions.options.configurationextensions.3.1.0.nupkg.sha512",
+        "microsoft.extensions.options.configurationextensions.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "Microsoft.Extensions.Primitives/6.0.0": {
       "sha512": "9+PnzmQFfEFNR9J2aDTfJGGupShHjOuGw4VUv+JB044biSHrnmCIMD+mJHmb2H7YryrfBEXDurxQ47gJZdCKNQ==",
       "type": "package",
@@ -657,6 +1701,23 @@
         "microsoft.extensions.primitives.6.0.0.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/2.1.0": {
+      "sha512": "ok+RPAtESz/9MUXeIEz6Lv5XAGQsaNmEYXMsgVALj4D7kqC8gveKWXWXbufLySR2fWrwZf8smyN5RmHu0e4BHA==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.0": {
@@ -790,6 +1851,106 @@
         "prometheus-net.aspnetcore.healthchecks.nuspec"
       ]
     },
+    "protobuf-net/2.4.0": {
+      "sha512": "j37MD1p1s9NdX8P5+IaY2J9p2382xiL1VP3mxYu0g+G/kf2YM2grFa1jJPO+0WDJNl1XhNPO0Q5yBEcbX77hBQ==",
+      "type": "package",
+      "path": "protobuf-net/2.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/protobuf-net.dll",
+        "lib/net20/protobuf-net.xml",
+        "lib/net35/protobuf-net.dll",
+        "lib/net35/protobuf-net.xml",
+        "lib/net40/protobuf-net.dll",
+        "lib/net40/protobuf-net.xml",
+        "lib/netcoreapp2.1/protobuf-net.dll",
+        "lib/netcoreapp2.1/protobuf-net.xml",
+        "lib/netstandard1.0/protobuf-net.dll",
+        "lib/netstandard1.0/protobuf-net.xml",
+        "lib/netstandard1.3/protobuf-net.dll",
+        "lib/netstandard1.3/protobuf-net.xml",
+        "lib/netstandard2.0/protobuf-net.dll",
+        "lib/netstandard2.0/protobuf-net.xml",
+        "lib/uap10.0/protobuf-net.dll",
+        "lib/uap10.0/protobuf-net.pri",
+        "lib/uap10.0/protobuf-net.xml",
+        "protobuf-net.2.4.0.nupkg.sha512",
+        "protobuf-net.nuspec"
+      ]
+    },
+    "System.Private.ServiceModel/4.5.3": {
+      "sha512": "ancrQgJagx+yC4SZbuE+eShiEAUIF0E1d21TRSoy1C/rTwafAVcBr/fKibkq5TQzyy9uNil2tx2/iaUxsy0S9g==",
+      "type": "package",
+      "path": "system.private.servicemodel/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "ref/netstandard/_._",
+        "runtimes/unix/lib/netstandard1.3/System.Private.ServiceModel.dll",
+        "runtimes/unix/lib/netstandard2.0/System.Private.ServiceModel.dll",
+        "runtimes/win/lib/netcore50/System.Private.ServiceModel.dll",
+        "runtimes/win/lib/netstandard1.3/System.Private.ServiceModel.dll",
+        "runtimes/win/lib/netstandard2.0/System.Private.ServiceModel.dll",
+        "runtimes/win/lib/uap10.0.16300/System.Private.ServiceModel.dll",
+        "system.private.servicemodel.4.5.3.nupkg.sha512",
+        "system.private.servicemodel.nuspec",
+        "version.txt"
+      ]
+    },
+    "System.Reflection.DispatchProxy/4.5.0": {
+      "sha512": "+UW1hq11TNSeb+16rIk8hRQ02o339NFyzMc4ma/FqmxBzM30l1c2IherBB4ld1MNcenS48fz8tbt50OW4rVULA==",
+      "type": "package",
+      "path": "system.reflection.dispatchproxy/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Reflection.DispatchProxy.dll",
+        "lib/netcoreapp2.0/System.Reflection.DispatchProxy.dll",
+        "lib/netstandard1.3/System.Reflection.DispatchProxy.dll",
+        "lib/netstandard2.0/System.Reflection.DispatchProxy.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netstandard1.3/System.Reflection.DispatchProxy.dll",
+        "ref/netstandard1.3/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/de/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/es/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/fr/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/it/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/ja/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/ko/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/ru/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/zh-hans/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/zh-hant/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard2.0/System.Reflection.DispatchProxy.dll",
+        "ref/netstandard2.0/System.Reflection.DispatchProxy.xml",
+        "ref/uap10.0.16299/System.Reflection.DispatchProxy.dll",
+        "ref/uap10.0.16299/System.Reflection.DispatchProxy.xml",
+        "ref/uap10.0.16300/System.Reflection.DispatchProxy.dll",
+        "ref/uap10.0.16300/System.Reflection.DispatchProxy.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/aot/lib/netcore50/System.Reflection.DispatchProxy.dll",
+        "runtimes/win-aot/lib/uap10.0.16299/System.Reflection.DispatchProxy.dll",
+        "runtimes/win/lib/uap10.0.16299/System.Reflection.DispatchProxy.dll",
+        "system.reflection.dispatchproxy.4.5.0.nupkg.sha512",
+        "system.reflection.dispatchproxy.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "type": "package",
@@ -814,10 +1975,136 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "System.Security.Principal.Windows/4.5.0": {
+      "sha512": "U77HfRXlZlOeIXd//Yoj6Jnk8AXlbeisf1oq1os+hxOGVnuG+lGSfGqTwTZBoORFF6j/0q7HXIl8cqwQ9aUGqQ==",
+      "type": "package",
+      "path": "system.security.principal.windows/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.dll",
+        "lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.dll",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/System.Security.Principal.Windows.dll",
+        "ref/netstandard1.3/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/de/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/es/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/fr/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/it/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ja/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ko/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ru/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
+        "ref/netstandard2.0/System.Security.Principal.Windows.dll",
+        "ref/netstandard2.0/System.Security.Principal.Windows.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.principal.windows.4.5.0.nupkg.sha512",
+        "system.security.principal.windows.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ServiceModel.Primitives/4.5.3": {
+      "sha512": "Wc9Hgg4Cmqi416zvEgq2sW1YYCGuhwWzspDclJWlFZqY6EGhFUPZU+kVpl5z9kAgrSOQP7/Uiik+PtSQtmq+5A==",
+      "type": "package",
+      "path": "system.servicemodel.primitives/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net46/System.ServiceModel.Primitives.dll",
+        "lib/net461/System.ServiceModel.Primitives.dll",
+        "lib/netcore50/System.ServiceModel.Primitives.dll",
+        "lib/netstandard1.3/System.ServiceModel.Primitives.dll",
+        "lib/netstandard2.0/System.ServiceModel.Primitives.dll",
+        "lib/netstandard2.0/System.ServiceModel.dll",
+        "lib/portable-net45+win8+wp8/_._",
+        "lib/uap10.0.16300/System.ServiceModel.Primitives.dll",
+        "lib/uap10.0.16300/System.ServiceModel.dll",
+        "lib/win8/_._",
+        "lib/wp8/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net46/System.ServiceModel.Primitives.dll",
+        "ref/net461/System.ServiceModel.Primitives.dll",
+        "ref/netcore50/System.ServiceModel.Primitives.dll",
+        "ref/netstandard1.0/System.ServiceModel.Primitives.dll",
+        "ref/netstandard1.1/System.ServiceModel.Primitives.dll",
+        "ref/netstandard1.3/System.ServiceModel.Primitives.dll",
+        "ref/netstandard2.0/System.ServiceModel.Primitives.dll",
+        "ref/netstandard2.0/System.ServiceModel.dll",
+        "ref/portable-net45+win8+wp8/_._",
+        "ref/uap10.0.16300/System.ServiceModel.Primitives.dll",
+        "ref/uap10.0.16300/System.ServiceModel.dll",
+        "ref/win8/_._",
+        "ref/wp8/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.servicemodel.primitives.4.5.3.nupkg.sha512",
+        "system.servicemodel.primitives.nuspec",
+        "version.txt"
+      ]
+    },
+    "System.Text.Json/4.7.2": {
+      "sha512": "TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
+      "type": "package",
+      "path": "system.text.json/4.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/netcoreapp3.0/System.Text.Json.dll",
+        "lib/netcoreapp3.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.4.7.2.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "App.Metrics.AspNetCore >= 4.3.0",
+      "App.Metrics.AspNetCore.All >= 4.3.0",
+      "App.Metrics.AspNetCore.Core >= 4.3.0",
+      "App.Metrics.AspNetCore.Endpoints >= 4.3.0",
+      "App.Metrics.AspNetCore.Hosting >= 4.3.0",
+      "App.Metrics.AspNetCore.Mvc >= 4.3.0",
+      "App.Metrics.AspNetCore.Tracking >= 4.3.0",
+      "App.Metrics.Core >= 4.3.0",
+      "App.Metrics.Formatters.Prometheus >= 4.3.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.17.0",
       "prometheus-net >= 8.0.0",
       "prometheus-net.AspNetCore >= 8.0.0",
@@ -867,6 +2154,42 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "App.Metrics.AspNetCore": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
+          "App.Metrics.AspNetCore.All": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
+          "App.Metrics.AspNetCore.Core": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
+          "App.Metrics.AspNetCore.Endpoints": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
+          "App.Metrics.AspNetCore.Hosting": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
+          "App.Metrics.AspNetCore.Mvc": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
+          "App.Metrics.AspNetCore.Tracking": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
+          "App.Metrics.Core": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
+          "App.Metrics.Formatters.Prometheus": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
             "target": "Package",
             "version": "[1.17.0, )"
